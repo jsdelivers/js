@@ -1,6 +1,6 @@
 let second = 1000;
 let minute = second * 60;
-11111111
+
 ion.sound({
     sounds: [
         { name: "snap" },
